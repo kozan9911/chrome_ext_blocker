@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Block Some URLs",
+    "description": "",
+    "version": "1.0",
+    "homepage_url": "https://github.com/dvstovba/chrome_ext",
+    "browser_action": {
+        "default_icon": "favicon.png",
+        "default_popup": "popup.html",
+        "default_title": "Black List"
+    },
+
+    "background": {
+        "scripts": ["scripts/blackList.js", "scripts/background.js"],
+        "persistent": true
+    },
+
+    "permissions": [
+        "activeTab", "webNavigation","tabs", "storage", "history", "contextMenus", "notifications"
+    ],
+
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/; object-src 'self'"
+}
+

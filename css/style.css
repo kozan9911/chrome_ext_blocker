@@ -1,0 +1,116 @@
+.container {
+    max-height: 600px;
+    min-height: 300px;
+    width: 250px;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    background: white;
+}
+body {
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+}
+.page-header{
+    margin: 10px 0;
+}
+h3{
+    margin: 5px 0;
+}
+#status {
+    /* avoid an excessively wide status text */
+    /* white-space: pre; */
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    max-width: 100%;
+}
+#list-wrapper {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+#items-list{
+    padding: 0
+}
+#controls{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+.item{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    list-style: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee
+}
+.item div:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    font-size: 16px;
+    font-weight: 700;
+}
+.item div:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    min-width: 60px;
+    padding: 2px;
+}
+.item button{
+    line-height: 1;
+    padding: 6px;
+}
+.item button + button {
+    margin-left: 5px
+}
